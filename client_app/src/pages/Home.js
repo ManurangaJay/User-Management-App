@@ -21,8 +21,8 @@ export default function Home() {
   <thead>
     <tr>
       <th scope="col">User Id</th>
-      <th scope="col">User Name</th>
       <th scope="col">Name</th>
+      <th scope="col">User Name</th>
       <th scope="col">Email</th>
       <th scope="col">Actions</th>
     </tr>
@@ -32,8 +32,8 @@ export default function Home() {
         users.map((user, index) => (
           <tr>
             <th scope="row" key={index}>{index+1}</th>
-            <td>{user.userName}</td>
             <td>{user.name}</td>
+            <td>{user.userName}</td>
             <td>{user.email}</td>
             <td>
                 <button className="btn btn-primary mx-2">View</button>

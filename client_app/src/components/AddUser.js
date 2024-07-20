@@ -8,7 +8,7 @@ export default function AddUser() {
 
     const [user,setUser]=useState({
         name: '',
-        username: '',
+        userName: '',
         email: ''
     });
     const{name,username,email} = user;
@@ -33,20 +33,20 @@ export default function AddUser() {
                 <form onSubmit={(e)=>onSubmit(e)}>
                     <div className='mb-3'>
                         <label htmlFor='Name' className='form-label'>Name</label>
-                        <input type='text' className='form-control' id='Name' placeholder='Enter your Name' 
+                        <input type='text' className='form-control' placeholder='Enter your Name' 
                         name='name' value={name} onChange={(e)=>onInputChange(e)}/>
                     </div>
                     
                     <div className='mb-3'>
-                        <label htmlFor='UserName' className='form-label'>User Name</label>
-                        <input type='text' className='form-control' id='UserName' placeholder='Enter your User Name' 
-                        name='username' value={username} onChange={(e)=>onInputChange(e)}/>
+                        <label htmlFor='Username' className='form-label'>User Name</label>
+                        <input type='text' className='form-control' placeholder='Enter your User Name' 
+                        name='userName' value={username} onChange={(e)=>onInputChange(e)}/>
                     </div>
 
 
                     <div className='mb-3'>
                         <label htmlFor='Email' className='form-label'>E-mail</label>
-                        <input type='text' className='form-control' id='Email' placeholder='Enter your Email address' 
+                        <input type='text' className='form-control' placeholder='Enter your Email address' 
                         name='email' value={email} onChange={(e)=>onInputChange(e)}/>
                     </div>
 

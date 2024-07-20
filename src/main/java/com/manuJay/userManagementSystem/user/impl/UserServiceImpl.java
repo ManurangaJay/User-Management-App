@@ -48,7 +48,7 @@ public class UserServiceImpl implements UserService {
             User job = jobOptional.get();
             job.setUserName(updatedUser.getUserName());
             job.setName(updatedUser.getName());
-            job.setAddress(updatedUser.getAddress());
+            job.setEmail(updatedUser.getEmail());
             userRepository.save(job);
             return true;
         }

@@ -32,10 +32,10 @@ public class UserController {
     @GetMapping("/get/{id}")
     public ResponseEntity<User> getUserById(@PathVariable Long id)
     {
-        User job = userService.getUserById(id);
-        if (job != null)
+        User user = userService.getUserById(id);
+        if (user != null)
         {
-            return new ResponseEntity<>(job , HttpStatus.OK);
+            return new ResponseEntity<>(user , HttpStatus.OK);
         }
         else
         {

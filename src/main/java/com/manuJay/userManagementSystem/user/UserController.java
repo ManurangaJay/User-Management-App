@@ -26,7 +26,7 @@ public class UserController {
     public ResponseEntity<String> addUser(@RequestBody User user)
     {
         userService.addUser(user);
-        return new ResponseEntity<>("Job added successfully",HttpStatus.CREATED);
+        return new ResponseEntity<>("User added successfully",HttpStatus.CREATED);
     }
 
     @GetMapping("/get/{id}")
